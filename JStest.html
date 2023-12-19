@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>No of students in list : <span id ="countlist">0</span></h1>
+    
+        <ul id = "list">
+            <li>No record </li>
+        </ul>
+    <div>
+        <button type="button" onclick="AddRecord()">Add New Record</button>
+        <button type="button" onclick="DeleteRecord()">Delete Record</button>
+        
+    </div>
+    <br/>
+    <div id="addstudent" style="display:none;">
+        <input type="text" id="txtName" placeholder="Enter your Name">
+        <br/>
+        <input type="text" id="txtAddress" placeholder="Enter your Address">
+        <br/>
+        <input type="text" id="batch" placeholder="Enter your Batch" onkeydown="Addevent(event)">
+        <br/>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
